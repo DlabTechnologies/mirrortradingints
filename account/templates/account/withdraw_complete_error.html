@@ -1,0 +1,29 @@
+{% extends 'account/dashboard_base.html' %}
+{% load static %}
+
+{% block content %}
+	
+      <div class="error-page">
+
+        <div class="error-content">
+         	<div class="container" style="text-align:center;">
+         	
+        		<h2 class="headline text-danger"> <i class="fa fa-exclamation-triangle"></i></h2>
+        		
+			  <h3 class="margin-top-0">SERVER ERROR!</h3>
+
+			  <h5>
+				Hi {{request.user.first_name}} <br>We are experiencing some dificulties while processing your request. <br>If the error message persist, please contact our support Team.
+			  </h5>
+			  
+          </div>
+        </div>
+        <!-- /.error-content -->
+        
+ 
+      </div>
+      <!-- /.error-page -->
+     
+  
+
+{% endblock %}
