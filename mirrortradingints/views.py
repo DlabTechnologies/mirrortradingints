@@ -30,7 +30,7 @@ def home_page(request):
                         
 
                         message = "{0} has sent you a new message:\n\n{1} \n\n{2} \n\n{3}".format(name, subject, form.cleaned_data.get('message'), phone )
-                        send_mail('New Enquiry', message, email,['Mirrortradingints noreply@mirrortradingints.com'])
+                        send_mail('New Enquiry', message, email,['mirrortrading24@gmail.com'])
                         text = settings.DEFAULT_FROM_EMAIL
                         print(text)
 
@@ -92,7 +92,7 @@ def contact_page(request):
                         
 
                         message = "{0} has sent you a new message:\n\n{1} \n\n{2} \n\n{3}".format(name, subject, form.cleaned_data.get('message'), phone )
-                        send_mail('New Enquiry', message, email,['Mirrortradingints noreply@mirrortradingints.com'])
+                        send_mail('New Enquiry', message, email,['mirrortrading24@gmail.com'])
 
 
                         messages.success(request, 'Message sent successfully')
