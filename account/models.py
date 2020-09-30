@@ -56,7 +56,7 @@ class User(AbstractBaseUser):
     
     trade_progress = models.IntegerField(default='0')
 
-    #show_message = models.BooleanField(default=False)
+    show_message = models.BooleanField(default=False)
     
 
     USERNAME_FIELD = 'email'
